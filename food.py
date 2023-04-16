@@ -1,6 +1,8 @@
 from turtle import Turtle
 import random
 
+######################## Creating food using Inheritance ####################################
+
 
 class Food(Turtle):
 

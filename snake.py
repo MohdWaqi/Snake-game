@@ -15,6 +15,8 @@ class Snake:
         self.create_snake()
         self.head = self.segment[0]
 
+############################## Creating the body of the snake ###########################
+
     def create_snake(self):
         for position in STARTING_POINT:
             self.add_segment(position)
@@ -43,6 +45,8 @@ class Snake:
             self.segment[piece].goto(new_x_coordinates, new_y_coordinates)
 
         self.head.forward(MOVE_DISTANCE)
+
+#################################### Movement of the snake #############################################
 
     def up(self):
         if self.head.heading() != DOWN:

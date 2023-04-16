@@ -2,6 +2,8 @@ from turtle import Turtle
 ALIGNMENT = "center"
 FONT = ("Arial", 15, "normal")
 
+######################## Using inheritance made Scoreboard on the screen ######################################
+
 
 class Scoreboard(Turtle):
 
@@ -20,6 +22,8 @@ class Scoreboard(Turtle):
     def update(self):
         self.clear()
         self.write(arg=f"Score: {self.score}  High Score: {self.high_score}", align=ALIGNMENT, font=FONT)
+
+################################# Saved the high score in a seperate text file ################################
 
     def reset(self):
         if self.score > self.high_score:
